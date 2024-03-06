@@ -148,6 +148,7 @@ body.night button:active {
 .main-body-text {
     font-family: Inter;
     line-height: 1.8;
+    text-align: center;
 }
 
 .section1 li {
@@ -399,12 +400,20 @@ footer p {
     .head-container {
         margin: 0 auto;
         padding: 0 auto;
-        width: 95%;
+        width: 100%;
+    }
+    .body-container{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .body-container h1 {
         font-size: 1.8rem;
         width: 18rem;
+        text-align: center;
     }
 
     .body-container h5 {
@@ -438,8 +447,8 @@ footer p {
     }
 
     .boxes{
-        width: 90%;
-        padding-top: 0;
+        width: 100%;
+        
     }
 
     .projects-texts{
