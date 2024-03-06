@@ -439,12 +439,12 @@ footer p {
 
     .boxes{
         width: 90%;
+        padding-top: 0;
     }
 
     .projects-texts{
         width: 90%;
         font-size: .7rem;
         line-height: 1.8;
-
     }
 }
