@@ -244,6 +244,7 @@ h5 {
     height: 10rem;
     border-radius: 10px;
     box-shadow: 0 0 10px;
+    background-color: #f0f0f0;
 }
 
 
@@ -285,6 +286,7 @@ h5 {
     box-shadow: 0 0 10px;
     padding: .4rem;
     border-radius: 15px;
+    background-color: #f0f0f0;
 }
 
 .boxes .detail {
@@ -373,6 +375,7 @@ footer p {
     font-family: Montserrat;
     font-size: .8rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 /* media query starts here */
@@ -432,5 +435,16 @@ footer p {
     .socials{
         display: flex;
         gap: 1.4rem;
+    }
+
+    .boxes{
+        width: 90%;
+    }
+
+    .projects-texts{
+        width: 90%;
+        font-size: .7rem;
+        line-height: 1.8;
+
     }
 }
