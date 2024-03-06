@@ -398,9 +398,9 @@ footer p {
     }
 
     .head-container {
-        margin: 0 auto;
-        padding: 0 auto;
+        padding-right: 0;
         width: 100%;
+        border: 2px solid;
     }
     .body-container{
         margin: 0 auto;
@@ -414,6 +414,7 @@ footer p {
         font-size: 1.8rem;
         width: 18rem;
         text-align: center;
+        margin-top: 1rem;
     }
 
     .body-container h5 {
@@ -433,9 +434,10 @@ footer p {
 
     .skills {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         gap: 1rem;
+        width: 100%;
     }
     .section3{
         text-align: center;
