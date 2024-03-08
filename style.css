@@ -15,7 +15,7 @@ body {
 
 }
 
-.container{
+.container {
     margin: 0 auto;
     width: 100%;
     max-width: 1540px;
@@ -270,10 +270,10 @@ h5 {
     gap: 1rem;
     margin-top: 2rem;
     width: 100%;
-    
+
 }
 
-.section3 p{
+.section3 p {
     text-align: center;
 }
 
@@ -284,9 +284,9 @@ h5 {
     align-items: center;
     gap: 2rem;
     padding: .4rem;
-    flex-wrap: nowrap;    
+    flex-wrap: nowrap;
     width: 100%;
-    
+
 }
 
 .projects-texts {
@@ -390,12 +390,13 @@ h5 {
     text-decoration: none;
 }
 
-footer{
+footer {
     background-color: #f0f0f0;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
 }
 
 footer p {
@@ -415,85 +416,135 @@ footer p {
         display: block;
     }
 
-    .menu {
-        display: none;
+    .menu-toggle:active .hamburger:nth-child(1) {
+        transform: rotate(-50deg) translate(-10px, 8px);
     }
 
-    .name-logo a {
-        font-size: .8rem;
+    .menu-toggle:active .hamburger:nth-child(2) {
+        opacity: 0;
+        width: 10px;
     }
 
-    .head-container {
-        padding-right: 0;
-        width: 100%;
-        padding: 0 1.4rem;
+    .menu-toggle:active .hamburger:nth-child(3) {
+        transform: rotate(50deg) translate(-10px, -8px);
     }
 
-
-    .body-container {
-        margin: 0 auto;
+    .menu ul {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .body-container h1 {
-        font-size: 1.8rem;
-        width: 17rem;
-        text-align: center;
-        margin-top: 2rem;
-    }
-
-    .body-container h5 {
-        font-size: 1.2rem;
-
-    }
-
-    .body-container h5 span {
-        color: rgb(173, 81, 14);
-    }
-
-    .body-container q,
-    .body-container .quoter {
-        font-size: .6rem;
-
-    }
-
-    .skills {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        text-align: left;
+        position: absolute;
         gap: 1rem;
-        width: 100%;
+        top: 8%;
+        left: 60%;
+        width: 200px;
+        height: auto;
+        background-color: rgba(128, 128, 128, 0.856);
+        border-radius: 5px;
+        
     }
 
-    .section3 {
+    ul li a{
+        width: 200px;
         text-align: center;
-       
-        width: 100%;
-    }
-
-    .socials {
+        padding: 15px;
         display: flex;
-        gap: 1.4rem;
+        flex-direction: column;
+        color: white;
+        transition: width 3s;
+        
     }
 
-    .section3-images{
-        flex-wrap: wrap;
+    ul li a:hover{
+        width: 220px;
+        background-color: aqua;
+        color: chocolate;
     }
 
-    .boxes {
-        width: 100%;
-
+    .menu.active {
+        display: flex;
     }
 
-    .projects-texts {
-        width: 80%;
-        font-size: .7rem;
-        line-height: 1.8;
+    .menu li {
+        margin: 0;
     }
+}
+
+.name-logo a {
+    font-size: .8rem;
+}
+
+.head-container {
+    padding-right: 0;
+    width: 100%;
+    padding: 0 1.4rem;
+}
+
+
+.body-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-container h1 {
+    font-size: 1.8rem;
+    width: 17rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.body-container h5 {
+    font-size: 1.2rem;
+
+}
+
+.body-container h5 span {
+    color: rgb(173, 81, 14);
+}
+
+.body-container q,
+.body-container .quoter {
+    font-size: .6rem;
+
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.section3 {
+    text-align: center;
+
+    width: 100%;
+}
+
+.socials {
+    display: flex;
+    gap: 1.4rem;
+}
+
+.section3-images {
+    flex-wrap: wrap;
+}
+
+.boxes {
+    width: 100%;
+
+}
+
+.projects-texts {
+    width: 80%;
+    font-size: .7rem;
+    line-height: 1.8;
+}
 }
 
 /* @media screen and (max-width: 373px){

@@ -1,13 +1,3 @@
-// function toggleBtn() {
-//   const body = document.body;
-//   if (
-//     window.matchMedia &&
-//     window.matchMedia("prefers-color-scheme: dark").matches
-//   ) {
-//     body.classList.toggle("night");
-//     body.style.color = "white";
-//   }
-// }
 
 function toggleBtn() {
   const body = document.body;
@@ -23,14 +13,14 @@ menuToggle.addEventListener("click", function () {
   menuBar.classList.toggle("active");
 });
 
-// const fadeInWords = () => {
-//   fadeInparagraph.forEach((el, index) => {
-//     setTimeout(() => {
-//       el.style.opacity = '1';
-//     }, index * 1000);
-//   });
-// };
 
-// window.onload = () => {
-//   fadeInWords();
-// }
+
+function hamburgerToggle() {
+  let icon = document.querySelector('.night-icon');
+  icon.classList.add('hidden');
+  let menu = document.querySelector(".menu");
+  menu.style.display = menu.style.display === "flex" || menu.style.display === "" ? "none" : "flex";
+  menu.classList.toggle('active');
+  
+}
+
