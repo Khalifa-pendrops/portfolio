@@ -429,44 +429,45 @@ footer p {
         transform: rotate(50deg) translate(-10px, -8px);
     }
 
-    .menu ul {
+    ul {
+        border: 1px solid;
+        padding: 10px 5px;
+        
+    }
+
+    .menu ul{
         display: flex;
         flex-direction: column;
-        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
         position: absolute;
-        gap: 1rem;
+        gap: .6rem;
         top: 8%;
-        left: 60%;
-        width: 200px;
+        left: 2%;
+        width: 180px;
         height: auto;
-        background-color: rgba(128, 128, 128, 0.856);
+        background-color: rgba(128, 128, 128, 0.068);
+        border: 1px solid gray;
+        box-shadow: 0 0 10px;
         border-radius: 5px;
         
     }
 
     ul li a{
-        width: 200px;
-        text-align: center;
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        color: white;
+        width: 180px;
+        text-align: left;
         transition: width 3s;
         
     }
 
     ul li a:hover{
-        width: 220px;
-        background-color: aqua;
-        color: chocolate;
+        width: 210px;
+        background-color: wheat;
+        color: brown;
     }
 
     .menu.active {
         display: flex;
-    }
-
-    .menu li {
-        margin: 0;
     }
 }
 
