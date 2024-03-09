@@ -96,7 +96,7 @@ body.night button:active {
     width: 22px;
 }
 
-.hamburger:nth-child(3){
+.hamburger:nth-child(3) {
     width: 18px;
 }
 
@@ -451,7 +451,7 @@ footer p {
         border-radius: 5px;
     }
 
-    ul{
+    ul {
         padding: 10px 5px;
         flex-direction: column;
         justify-content: center;
@@ -466,14 +466,17 @@ footer p {
 
     }
 
-#menu-bar ul li:hover:not(.active) {
-    width: 173px;
-    background-color: wheat;
-    color: brown;
-    transition: width 3s;
-    padding: .8rem;
-    border-radius: 2px;
-}
+    #menu-bar ul li:hover:not(:active) {
+        width: 173px;
+        background: linear-gradient(to right, white,rgba(123, 181, 193, 0));
+        color: brown;
+        transition: width 3s;
+        padding: .2rem;
+        border-radius: 2px;
+        font-size: 1.2rem;
+        font-weight: 800;
+        font-family: pompiere;
+    }
 
     #menu-bar.active {
         display: flex;
